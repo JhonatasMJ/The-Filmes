@@ -11,7 +11,7 @@ export interface InputProps {
 
 
 export interface IconProps {
-    icon: React.ElementType; // Usando React.ElementType ao invés de TablerIconProps
+    icon: React.ElementType; 
     className?: string;
   }
 

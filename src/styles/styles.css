@@ -15,3 +15,28 @@ body {
     -moz-osx-font-smoothing: grayscale;
   }
   
+
+  .swiper-pagination-bullet {
+    @apply w-3 h-3 bg-white rounded-full opacity-50; /* Bolinhas pequenas, brancas e com opacidade */
+  }
+  
+  .swiper-pagination-bullet-active {
+    @apply bg-secondary opacity-100; /* A bolinha ativa ficará com a cor secundária e sem opacidade */
+  }
+
+
+
+.swiper-pagination-bullet {
+  width: 24px;  /* Tamanho da bolinha */
+  height: 4px;  /* Tamanho da bolinha */
+  background-color: rgba(255, 255, 255, 0.5);  /* Cor das bolinhas inativas */
+  border-radius: 10px;  /* Deixa as bolinhas redondas */
+  margin: 0 5px;  /* Espaço entre as bolinhas */
+}
+
+/* Bolinha ativa */
+.swiper-pagination-bullet-active {
+  background-color: #ff6347;  /* Cor da bolinha ativa (exemplo: vermelho) */
+  width: 24px;  /* Tamanho da bolinha ativa */
+  height: 6px;  /* Tamanho da bolinha ativa */
+}

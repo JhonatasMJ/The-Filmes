@@ -17,7 +17,7 @@ function Button({
 }: ButtonProps) {
   return (
     <button
-      className={`flex items-center justify-center font-bold  px-4 py-3 rounded-sm bg-secondary text-white hover:bg-orange-700 focus:outline-none disabled:opacity-50 disabled:cursor-not-allowed ${className}`}
+      className={`flex items-center justify-center font-bold  px-4 py-3 rounded-sm y text-white hover:bg-orange-700 focus:outline-none disabled:opacity-50 disabled:cursor-not-allowed ${className}`}
       disabled={isLoading}
       {...rest}
     >
@@ -33,7 +33,7 @@ function Title({ children, className = "" }: TitleProps) {
 
 
 function Icon({ icon: IconComponent, className = "" }: IconProps) {
-  return <IconComponent className={`text-lg ${className}`} />;
+  return <IconComponent className={`text-lg mr-4 ${className}`} />;
 }
 
 

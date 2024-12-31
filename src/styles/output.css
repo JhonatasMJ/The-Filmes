@@ -562,12 +562,28 @@ video {
   position: relative;
 }
 
+.inset-0 {
+  inset: 0px;
+}
+
+.left-0 {
+  left: 0px;
+}
+
 .right-3 {
   right: 0.75rem;
 }
 
+.top-0 {
+  top: 0px;
+}
+
 .top-2\/3 {
   top: 66.666667%;
+}
+
+.z-30 {
+  z-index: 30;
 }
 
 .mx-auto {
@@ -579,12 +595,20 @@ video {
   margin-bottom: 3rem;
 }
 
+.mb-14 {
+  margin-bottom: 3.5rem;
+}
+
 .mb-4 {
   margin-bottom: 1rem;
 }
 
 .ml-2 {
   margin-left: 0.5rem;
+}
+
+.mr-4 {
+  margin-right: 1rem;
 }
 
 .mt-4 {
@@ -599,16 +623,54 @@ video {
   margin-top: 2rem;
 }
 
+.mt-14 {
+  margin-top: 3.5rem;
+}
+
+.mt-10 {
+  margin-top: 2.5rem;
+}
+
+.line-clamp-2 {
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+}
+
+.line-clamp-3 {
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+}
+
 .flex {
   display: flex;
+}
+
+.h-\[660px\] {
+  height: 660px;
+}
+
+.h-full {
+  height: 100%;
 }
 
 .w-11\/12 {
   width: 91.666667%;
 }
 
+.w-3\/4 {
+  width: 75%;
+}
+
 .w-full {
   width: 100%;
+}
+
+.max-w-7xl {
+  max-width: 80rem;
 }
 
 .-translate-y-1\/2 {
@@ -650,16 +712,26 @@ video {
   justify-content: center;
 }
 
+.justify-between {
+  justify-content: space-between;
+}
+
 .gap-2 {
   gap: 0.5rem;
+}
+
+.gap-4 {
+  gap: 1rem;
 }
 
 .gap-6 {
   gap: 1.5rem;
 }
 
-.gap-4 {
-  gap: 1rem;
+.space-x-4 > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-x-reverse: 0;
+  margin-right: calc(1rem * var(--tw-space-x-reverse));
+  margin-left: calc(1rem * calc(1 - var(--tw-space-x-reverse)));
 }
 
 .rounded-md {
@@ -684,13 +756,48 @@ video {
   border-color: rgb(239 68 68 / var(--tw-border-opacity, 1));
 }
 
+.bg-black {
+  --tw-bg-opacity: 1;
+  background-color: rgb(0 0 0 / var(--tw-bg-opacity, 1));
+}
+
+.bg-primary {
+  --tw-bg-opacity: 1;
+  background-color: rgb(3 7 18 / var(--tw-bg-opacity, 1));
+}
+
+.bg-red-700 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(185 28 28 / var(--tw-bg-opacity, 1));
+}
+
 .bg-secondary {
   --tw-bg-opacity: 1;
   background-color: rgb(224 90 51 / var(--tw-bg-opacity, 1));
 }
 
+.bg-opacity-20 {
+  --tw-bg-opacity: 0.2;
+}
+
+.bg-opacity-50 {
+  --tw-bg-opacity: 0.5;
+}
+
 .bg-cover {
   background-size: cover;
+}
+
+.bg-top {
+  background-position: top;
+}
+
+.p-4 {
+  padding: 1rem;
+}
+
+.p-2 {
+  padding: 0.5rem;
 }
 
 .px-2 {
@@ -727,6 +834,11 @@ video {
   text-align: center;
 }
 
+.text-2xl {
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
+
 .text-3xl {
   font-size: 1.875rem;
   line-height: 2.25rem;
@@ -735,6 +847,11 @@ video {
 .text-4xl {
   font-size: 2.25rem;
   line-height: 2.5rem;
+}
+
+.text-7xl {
+  font-size: 4.5rem;
+  line-height: 1;
 }
 
 .text-lg {
@@ -792,9 +909,55 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+.swiper-pagination-bullet {
+  height: 0.75rem;
+  width: 0.75rem;
+  border-radius: 9999px;
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity, 1));
+  opacity: 0.5;
+  /* Bolinhas pequenas, brancas e com opacidade */
+}
+
+.swiper-pagination-bullet-active {
+  --tw-bg-opacity: 1;
+  background-color: rgb(224 90 51 / var(--tw-bg-opacity, 1));
+  opacity: 1;
+  /* A bolinha ativa ficará com a cor secundária e sem opacidade */
+}
+
+.swiper-pagination-bullet {
+  width: 24px;
+  /* Tamanho da bolinha */
+  height: 4px;
+  /* Tamanho da bolinha */
+  background-color: rgba(255, 255, 255, 0.5);
+  /* Cor das bolinhas inativas */
+  border-radius: 10px;
+  /* Deixa as bolinhas redondas */
+  margin: 0 5px;
+  /* Espaço entre as bolinhas */
+}
+
+/* Bolinha ativa */
+
+.swiper-pagination-bullet-active {
+  background-color: #ff6347;
+  /* Cor da bolinha ativa (exemplo: vermelho) */
+  width: 24px;
+  /* Tamanho da bolinha ativa */
+  height: 6px;
+  /* Tamanho da bolinha ativa */
+}
+
 .hover\:bg-orange-700:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(194 65 12 / var(--tw-bg-opacity, 1));
+}
+
+.hover\:text-secondary:hover {
+  --tw-text-opacity: 1;
+  color: rgb(224 90 51 / var(--tw-text-opacity, 1));
 }
 
 .focus\:outline-none:focus {
@@ -842,4 +1005,3 @@ body {
     background-image: url('./src/assets/fundo.png');
   }
 }
-  
