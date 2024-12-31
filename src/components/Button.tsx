@@ -1,5 +1,5 @@
 import React from "react";
-import { IconLoader2 as Loader2 } from "@tabler/icons-react"; // Importando ícones
+import { IconLoader2 as Loader2 } from "@tabler/icons-react"; 
 import { TitleProps, IconProps } from "../types/Types";
 
 
@@ -27,13 +27,9 @@ function Button({
 }
 
 
-
-
 function Title({ children, className = "" }: TitleProps) {
   return <span className={`text-sm font-medium ${className}`}>{children}</span>;
 }
-
-
 
 
 function Icon({ icon: IconComponent, className = "" }: IconProps) {

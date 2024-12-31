@@ -6,6 +6,7 @@ export interface InputProps {
   placeholder?: string; 
   disabled?: boolean; 
   className?: string; 
+  name?: string;
 }
 
 
